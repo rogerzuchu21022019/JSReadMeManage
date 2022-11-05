@@ -255,8 +255,11 @@ thành
 
 ## `IV Chuẩn bị các file end_point `
     
+* `32`
     ```bash
-    1 Chuẩn bị Navigation
+    1 Copy từ file index.js lên hoặc tự gõ syntax
+
+    2 Trong client-web tạo file Navigation.js và chạy code helper navigation....
 
     2 Chuẩn bị UI
     ```
