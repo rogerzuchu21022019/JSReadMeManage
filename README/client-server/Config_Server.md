@@ -21,7 +21,7 @@ express --view=ejs Server
 * `4 add libraries`
 
 ```bash
-yarn add  bcrypt mongoose nodemon randombytes dotenv jsonwebtoken joi nodemon redis
+yarn add  bcrypt mongoose nodemon randombytes dotenv jsonwebtoken joi nodemon redis body-parser
 ```
 
 
@@ -64,7 +64,15 @@ thành
 ## `II Part2 Connect DB,Server`
 
 * `11 connect Mongodb`
-  * `Tạo folder utils trong src và tạo file MultiConnection.js`
+  * `Tạo folder utils trong src và tạo 2 folder`
+
+    ```bash
+    1 client-web
+
+    2 server
+    ```
+
+  * `Tạo file MultiConnection.js trong folder server`
   * `Chạy code helper`
 
   ```bash
@@ -158,7 +166,112 @@ thành
   ```bash
   app.JS...
   ```
-*  `23 config từ trên xuống như trong file`
+*  `23 config từ trên xuống như trong file app.js theo thứ tự`
+
+    ```bash
+    1 ManagerMiddleware
+
+    2 HandleError
+
+    3 ManagerRouter
+    ```
+
+*  `24 Vô folder middleware tạo file Manager.js và HandlerError.js`
+
+    ```bash
+    1 ManagerMiddleware
+
+    2 HandleError
+    ```
+
+*  `25 Run code helper trong từng file`
+
+    ```bash
+    1 middleware...
+
+    2 handleError...
+    ```
+
+*  `26 Run code helper trong từng file`
+
+    ```bash
+    1 middleware...
+
+    2 handleError...
+    ```
+*  `27 Vô routers Tạo folder manager -> Tạo Manager.js rồi run code helper`
+
+    ```bash
+    1 routerManager....
+
+    2 Đọc lại chú thích về 1 url để nhớ lại
+    
+    3 Tổ chức cấu trúc folder routes lại luôn
+
+    4 Nhớ tab cho đến lúc hết để tránh bỏ quên điều gì
+
+    5 Các ApiUser.router chưa có bây giờ sẽ đi tạo
+    ```
+*  `28 Trong folder API Tạo 2 file`
+
+    ```bash
+    1 Api.User.js
+
+    2 Api.Product.js
+
+    ** Lưu ý là nếu project có nhiều tính năng thì mỗi thằng
+    sẽ được khởi tạo như User và Product . VD có thêm tính năng của Admin
+    thì 
+    3 Api.Admin.js 
+    ...
+    ```
+
+*  `29 Trong Api.User.js`
+
+    ```bash
+    1 import router ở trong folder users vào và sử dụng
+    module.exports để export tất cả cả router này ra để sử dụng trong
+    Manager.js của routes
+
+    2 run coder helper
+    ApiUser....
+    ...
+    ```
+
+*  `30 Vào folder auth và tạo 2 file`
+
+    ```bash
+    1 Login.js
+
+    2 Logout.js
+    ```
+*  `31 Trong folder users tạo file `
+
+    ```bash
+    1 Register.js
+
+    **Thử chạy vào file Api.User.js và xài cmd+left chuột test đúng đường dẫn là okey
+    ```
+
+## `IV Chuẩn bị các file end_point `
+    
+    ```bash
+    1 Chuẩn bị Navigation
+
+    2 Chuẩn bị UI
+    ```
+
+    
+    
+
+
+
+
+
+
+
+
+
 
     
   
