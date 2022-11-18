@@ -21,7 +21,7 @@ express --view=ejs Server
 * `4 add libraries`
 
 ```bash
-yarn add  bcrypt mongoose nodemon randombytes dotenv jsonwebtoken joi nodemon redis body-parser
+yarn add  bcrypt mongoose nodemon randombytes dotenv jsonwebtoken joi nodemon redis body-parser express-session ioredis connect-redis  
 ```
 
 
@@ -261,7 +261,7 @@ thành
 
     2 Trong client-web tạo file Navigation.js và chạy code helper navigation....
 
-    2 Chuẩn bị UI
+    2 Chuẩn bị UI 
     ```
 
     

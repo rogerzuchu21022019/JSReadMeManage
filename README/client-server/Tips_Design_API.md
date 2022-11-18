@@ -4,6 +4,10 @@ Link: https://viblo.asia/p/restful-api-huong-dan-thiet-ke-the-best-practices-Qpm
 
 * `1 Filter là sử dụng toán tử && và truyền vào nhiều parameter cùng nhau`
     ```bash
+
+
+
+    
     parameter1 & parameter2
     
     parameter có kiểu dữ liệu là 1 object chứa key:value 
